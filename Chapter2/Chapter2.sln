@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VsExample", "VsExample\VsExample.csproj", "{CE2C5F83-245B-48EE-9D36-0E7656A0ADDE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|ARM = Debug|ARM
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|ARM = Release|ARM
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CE2C5F83-245B-48EE-9D36-0E7656A0ADDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE2C5F83-245B-48EE-9D36-0E7656A0ADDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE2C5F83-245B-48EE-9D36-0E7656A0ADDE}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{CE2C5F83-245B-48EE-9D36-0E7656A0ADDE}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{CE2C5F83-245B-48EE-9D36-0E7656A0ADDE}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{CE2C5F83-245B-48EE-9D36-0E7656A0ADDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE2C5F83-245B-48EE-9D36-0E7656A0ADDE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE2C5F83-245B-48EE-9D36-0E7656A0ADDE}.Release|ARM.ActiveCfg = Release|Any CPU
+		{CE2C5F83-245B-48EE-9D36-0E7656A0ADDE}.Release|x64.ActiveCfg = Release|Any CPU
+		{CE2C5F83-245B-48EE-9D36-0E7656A0ADDE}.Release|x86.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
