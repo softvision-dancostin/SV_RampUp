@@ -7,8 +7,8 @@
     <ProjectGuid>{CE2C5F83-245B-48EE-9D36-0E7656A0ADDE}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>VsExample</RootNamespace>
-    <AssemblyName>VsExample</AssemblyName>
+    <RootNamespace>Chapter2.VsExample</RootNamespace>
+    <AssemblyName>Chapter2.VsExample</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
