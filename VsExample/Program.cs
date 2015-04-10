@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace VsExample
 {
@@ -10,10 +6,6 @@ namespace VsExample
     {
         static void Main(string[] args)
         {
-            foreach (var item in args)
-            {
-                
-            }
             ConfigureCUI();
             // Wait for Enter key to be pressed.
             Console.ReadLine();

@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DecisionConstruct
 {
@@ -25,8 +21,8 @@ namespace DecisionConstruct
             Console.WriteLine("1 [C#], 2 [VB]");
             Console.Write("Please pick your language preference: ");
             string langChoice = Console.ReadLine();
-            int n = int.Parse(langChoice);
-            switch (n)
+            int language = int.Parse(langChoice);
+            switch (language)
             {
                 case 1:
                     Console.WriteLine("Good choice, C# is a fine language.");

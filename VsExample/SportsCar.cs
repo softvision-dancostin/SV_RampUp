@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace VsExample
 {
@@ -9,8 +6,8 @@ namespace VsExample
     {
         public string GetPetName()
         {
-            petName = "Fred";
-            return petName;
+            PetName = "Fred";
+            return PetName;
         }
     }
 }
