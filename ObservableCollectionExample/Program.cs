@@ -21,6 +21,7 @@ namespace ObservableCollectionExample
             people.CollectionChanged += people_CollectionChanged;
             people.Add(new Person { FirstName = "Peter", LastName = "Murphy", Age = 52 });
             people.Add(new Person { FirstName = "Kevin", LastName = "Key", Age = 48 });
+            people.RemoveAt(0);
             // Wire up the CollectionChanged event.
 
             Console.ReadLine();
