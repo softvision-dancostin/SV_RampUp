@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LazyObjectInstantiationExample
 {
-    class Song
+    public class Song
     {
         public string Artist { get; set; }
         public string TrackName { get; set; }

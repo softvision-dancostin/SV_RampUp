@@ -3,7 +3,7 @@ using System.Reflection;
 
 namespace ExtensionMethodExamples
 {
-    static class MyExtensions
+    public static class MyExtensions
     {
         // This method allows any object to display the assembly
         // it is defined in.

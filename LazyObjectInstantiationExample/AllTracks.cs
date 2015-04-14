@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LazyObjectInstantiationExample
 {
-    class AllTracks
+    public class AllTracks
     {
         // Our media player can have a maximum
         // of 10,000 songs.

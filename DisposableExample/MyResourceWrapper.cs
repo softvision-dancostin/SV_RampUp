@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DisposableExample
 {
-    class MyResourceWrapper : IDisposable
+    public class MyResourceWrapper : IDisposable
     {
         // Used to determine if Dispose()
         // has already been called.

@@ -2,7 +2,7 @@
 
 namespace LINQExample
 {
-    class Car
+    public class Car
     {
         public string PetName { get; set; }
         public string Color { get; set; }

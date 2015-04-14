@@ -6,7 +6,6 @@ using System.Threading.Tasks;
 
 namespace ObjectLifetimeExample
 {
-    // Car.cs
     public class Car
     {
         public int CurrentSpeed { get; set; }
