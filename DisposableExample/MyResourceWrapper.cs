@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DisposableExample
 {
@@ -20,7 +16,7 @@ namespace DisposableExample
             // Now suppress finalization.
             GC.SuppressFinalize(this);
         }
-        private void CleanUp(bool disposing)
+        protected void CleanUp(bool disposing)
         {
             // Be sure we have not already been disposed!
             if (!this.disposed)
@@ -35,6 +31,7 @@ namespace DisposableExample
             }
             disposed = true;
         }
+
         ~MyResourceWrapper()
         {
             Console.Beep();
