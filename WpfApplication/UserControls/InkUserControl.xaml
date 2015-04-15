@@ -1,0 +1,42 @@
+﻿<UserControl x:Class="WpfApplication.UserControls.InkUserControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" >
+    <Grid Background="#FFE5E5E5" VerticalAlignment="Stretch">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <ToolBar x:Name="inkToolbar" Height="Auto">
+            <Border Margin="0,2,0,3" Width="300">
+                <Grid>
+                    <RadioButton x:Name="inkRadio" Content="Ink Mode!" GroupName="InkMode" Margin="0,0,200,0" Click="RadioButtonClicked"/>
+                    <RadioButton x:Name="eraseRadio" Content="Erase Mode!" GroupName="InkMode" Margin="100,0" Click="RadioButtonClicked"/>
+                    <RadioButton x:Name="selectRadio" Content="Select Mode!" GroupName="InkMode" Margin="200,0,0,0" Click="RadioButtonClicked"/>
+                </Grid>
+            </Border>
+            <Separator/>
+            <ComboBox x:Name="comboColors" Width="150" SelectionChanged="ColorChanged">
+                <StackPanel Orientation ="Horizontal" Tag="Red">
+                    <Ellipse Fill ="Red" Height ="20" Width ="20"/>
+                    <Label FontSize ="20" HorizontalAlignment="Center" VerticalAlignment="Center" Content="Red"/>
+                </StackPanel>
+                <StackPanel Orientation ="Horizontal" Tag="Green">
+                    <Ellipse Fill ="Green" Height ="20" Width ="20"/>
+                    <Label FontSize ="20" HorizontalAlignment="Center" VerticalAlignment="Center" Content="Green"/>
+                </StackPanel>
+                <StackPanel Orientation ="Horizontal" Tag="Blue">
+                    <Ellipse Fill ="Blue" Height ="20" Width ="20"/>
+                    <Label FontSize ="20" HorizontalAlignment="Center" VerticalAlignment="Center" Content="Blue"/>
+                </StackPanel>
+            </ComboBox>
+            <Separator/>
+            <Button x:Name="btnSave" Content="Save" Click="SaveData"/>
+            <Button x:Name="btnLoad" Content="Load" Click="LoadData"/>
+            <Button x:Name="btnClear" Content="Clears" Click="Clear"/>
+        </ToolBar>
+        <InkCanvas x:Name="myInkCanvas" HorizontalAlignment="Stretch" Grid.Row="1" Margin="5" VerticalAlignment="Stretch"/>
+    </Grid>
+</UserControl>
