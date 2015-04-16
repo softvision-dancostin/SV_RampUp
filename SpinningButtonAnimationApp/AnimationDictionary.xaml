@@ -1,0 +1,33 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Style TargetType="Label" x:Key="GrowingLabelStyle">
+        <Style.Triggers>
+            <EventTrigger RoutedEvent = "Label.Loaded">
+                <EventTrigger.Actions>
+                    <BeginStoryboard>
+                        <Storyboard TargetProperty = "FontSize">
+                            <DoubleAnimation From = "12" To = "100" Duration = "0:0:4" RepeatBehavior = "Forever"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger.Actions>
+            </EventTrigger>
+        </Style.Triggers>
+    </Style>
+    
+    <Style TargetType="Button" x:Key="ButtonLoadingStyle">
+        <Style.Triggers>
+            <EventTrigger RoutedEvent="Button.Loaded">
+                <BeginStoryboard>
+                    <Storyboard>
+                        <StringAnimationUsingKeyFrames RepeatBehavior = "Forever" Storyboard.TargetProperty="Content" Duration="0:0:3">
+                            <DiscreteStringKeyFrame Value="" KeyTime="0:0:0" />
+                            <DiscreteStringKeyFrame Value="O" KeyTime="0:0:1" />
+                            <DiscreteStringKeyFrame Value="OK" KeyTime="0:0:1.5" />
+                            <DiscreteStringKeyFrame Value="OK!" KeyTime="0:0:2" />
+                        </StringAnimationUsingKeyFrames>
+                    </Storyboard>
+                </BeginStoryboard>
+            </EventTrigger>
+        </Style.Triggers>
+    </Style>
+</ResourceDictionary>
